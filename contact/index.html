@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Kenlar IT | Contact Us</title>
+<link href="../library/css/global.css" rel="stylesheet" type="text/css" />
+<link href="../library/css/validation.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../library/js/validation.js"></script>
+<style type="text/css">
+<!--
+.style1 {color: #FF0000}
+-->
+</style>
+</head>
+
+<body>
+<div id="container">
+<div style="height:110px">
+<div style="background:url(../library/images/plus.jpg); width:190px; height:110px; float:right; padding-right:-3px;"></div>
+
+<div style="width:250px; position:absolute; left:9px; top:9px; color:#FFFFFF; height: 97px;"><img src="../library/images/Kenlar-LOGO-2.png" width="250" height="97" alt="Home" longdesc="http://www.kenlar.net" /></div>
+
+</div>
+<div id="topnav" style="background:url(../library/images/top_nav.gif) no-repeat; height:30px">
+<ul class="menu">
+        <li class="m"><a href="http://www.kenlar.net/"><b><span style="font-weight:bold">Home</span></b></a></li>
+      <li class="m"><a href="../about/"><b><span style="font-weight:bold">About Us</span></b></a></li>
+      <li class="m"><a href="../residential/"><b><span style="font-weight:bold">Residential Services</span></b></a></li>
+      <li class="m"><a href="../business/"><b><span style="font-weight:bold">Business Services</span></b></a></li>
+      <li class="current"><a href="../contact/"><b><span style="font-weight:bold">Contact Us</span></b></a></li>
+      <li class="m"><a href="../enquiry/"><b><span style="font-weight:bold">Book a Repair</span></b></a></li>
+    </ul>
+</div>
+<div style="background:#FFFFFF">
+<div id="breadcrumb">Your are here: <a href="../index.html">Home</a> &gt; Contact Us</div><br />
+
+  <table width="940" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td valign="top"><div style="border-right:1px dotted #CCCCCC; padding:0 25px 0 25px; position:relative">
+      <p>&nbsp;</p>
+      <h1>Contact Us</h1>
+      <br />
+<?html if ($_GET['id'] == 'sent') {   ?>
+<div style="height:30px; line-height:30px; padding-left:15px; background:#FFFFFF; color: #009900; border:1px solid #009900"><strong><img src="../library/images/icon_tick.gif" width="16" height="16" alt="" style="float:left; padding:7px 10px 0px 0px" />Email Sent!</strong> We will get in touch shortly. Thank you. </div>
+<br />
+
+<?html } ?>
+<?html if ($_GET['id'] == 'error') {   ?>
+<div style="height:30px; line-height:30px; padding-left:15px; background:#FFFFFF; color: #CC3300; border:1px solid #CC3300"><strong><img src="../library/images/icon_error.gif" width="16" height="16" alt="" style="float:left; padding:7px 10px 0px 0px" />Oops!</strong> Please complete all required fields correctly. </div>
+<br />
+
+<?html } ?>
+                <form action="form.html" method="post" style="margin:0px; padding:0px;">
+            <table width="550" border="0" cellspacing="0" cellpadding="2">
+            <tr>
+                    <td width="100"><label for="fullname" class="displayBlock">Name <span class="style1">*</span></label></td>
+                    <td><input name="fullname" type="text" id="fullname" maxlength="64" style="width:290px" /></td>
+                </tr>
+                  <tr>
+                    <td>Company</td>
+                    <td><input name="company" type="text" style="width:290px" maxlength="64" /></td>
+                  </tr>
+                  <tr>
+                    <td><label for="email" class="displayBlock">Email <span class="style1">*</span></label></td>
+                    <td><input name="email" type="text" id="email" maxlength="64" style="width:290px" /></td>
+                  </tr>
+                  <tr>
+                    <td>Telephone</td>
+                    <td><input name="tel" type="text" id="tel" maxlength="64" style="width:290px" /></td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><label for="message" class="displayBlock">Message <span class="style1">*</span></label></td>
+                    <td><label>
+                      <textarea name="message" id="message" cols="45" rows="7" style="width:440px"></textarea>
+                    </label></td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td class="small"><span class="style1">*</span> Required</td>
+                    <td align="right"><label>
+                      <input type="submit" name="button" id="button" value="Submit" />
+                    </label></td>
+                  </tr>
+                </table> 
+                </form>
+            <script type="text/javascript" src="../library/js/submit.js"></script> 
+    </div><br />
+<br />
+</td>
+    <td width="310" valign="top"><br />
+      <br />
+      <div style="width:280px; float:right">
+      <p>Call us on:<br />    
+          <strong>0203 475 4730</strong>&nbsp;<br />  
+        <br />  
+        <br />
+        Email us at:<br />
+        <a href="mailto:computers@kenlar.net">computers@kenlar.net</a></p>
+      </div></td></tr>
+</table>
+  </div>
+<?html require('../includes/footer.html'); ?>
+
+</body>
+</html>

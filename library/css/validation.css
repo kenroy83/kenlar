@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*------------------------------------------VALIDATION*/
+.LV_validation_message{
+	display:none;	
+}	
+.LV_invalid {
+    color:#D33D0A;
+}   
+.LV_invalid_field, 
+input.LV_invalid_field:hover, 
+input.LV_invalid_field:active,
+textarea.LV_invalid_field:hover, 
+textarea.LV_invalid_field:active {
+    border: 2px solid #D33D0A;
+	background:#FFDFDF;
+}
